@@ -4,11 +4,11 @@ import '../src/index.js'
 
 test('example test', async t => {
     document.body.innerHTML += `
-        <{{component-name}} class="test">
-        </{{component-name}}>
+        <arrow-next class="test">
+        </arrow-next>
     `
 
-    const el = await waitFor('{{component-name}}')
+    const el = await waitFor('arrow-next')
 
     t.ok(el, 'should find an element')
 })
