@@ -4,22 +4,31 @@ const debug = createDebug()
 // for docuement.querySelector
 declare global {
     interface HTMLElementTagNameMap {
-        'arrow-next': Example
+        'arrow-next': ArrowNext
     }
 }
 
-export class Example extends HTMLElement {
+export class ArrowNext extends HTMLElement {
     constructor () {
         super()
 
-        this.innerHTML = `<div>
-            <p>example</p>
-            <ul>
-                ${Array.from(this.children).filter(Boolean).map(node => {
-                    return `<li>${node.outerHTML}</li>`
-                }).join('')}
-            </ul>
-        </div>`
+        this.innerHTML = `<button>
+            <svg width="11.5" height="20" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+            >
+                <path
+                    d="M1.5 1.5 10 10l-8.5 8.5"
+                    stroke="#00265D"
+                    stroke-width="3"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                ></path>
+            </svg>
+            <span class="visually-hidden">Next</span>
+        </button>`
     }
 
     // Define the attributes to observe
@@ -73,5 +82,5 @@ export class Example extends HTMLElement {
 }
 
 if ('customElements' in window) {
-    customElements.define('arrow-next', Example)
+    customElements.define('arrow-next', ArrowNext)
 }

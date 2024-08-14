@@ -7,15 +7,13 @@
 [![semantic versioning](https://img.shields.io/badge/semver-2.0.0-blue?logo=semver&style=flat-square)](https://semver.org/)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-`<package description goes here>`
+A next button as icon.
 
 [See a live demo](https://substrate-system.github.io/arrow-next/)
 
 <!-- toc -->
 
 ## install
-
-Installation instructions
 
 ```sh
 npm i -S @substrate-system/arrow-next

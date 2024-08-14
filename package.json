@@ -22,6 +22,7 @@
     "build": "mkdir -p ./dist && rm -rf ./dist/* && npm run build-cjs && npm run build-esm && npm run build-esm:min && npm run build-css && npm run build-css:min",
     "start": "vite",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
+    "stylelint": "stylelint src/*.css",
     "preversion": "npm run lint && stylelint src/*.css",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
