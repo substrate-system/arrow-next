@@ -8,7 +8,7 @@ test('example test', async t => {
         </arrow-next>
     `
 
-    const el = await waitFor('arrow-next')
+    const el = await waitFor('arrow-next svg')
 
-    t.ok(el, 'should find an element')
+    t.ok(el, 'should find the element')
 })
