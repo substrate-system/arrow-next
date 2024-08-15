@@ -7,7 +7,7 @@
 [![semantic versioning](https://img.shields.io/badge/semver-2.0.0-blue?logo=semver&style=flat-square)](https://semver.org/)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-A next button as icon.
+A next button icon.
 
 [See a live demo](https://substrate-system.github.io/arrow-next/)
 
@@ -35,6 +35,13 @@ npm i -S @substrate-system/arrow-next
 
 ## API
 
+> [!IMPORTANT]  
+> This depends on a CSS class `visually-hidden`.
+> See [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/).
+> Install `@substrate-system/css-util` for help. 
+
+import '@substrate-system/css-util/visually-hidden'
+
 This exposes ESM and common JS via [package.json `exports` field](https://nodejs.org/api/packages.html#exports).
 
 ### ESM
@@ -58,14 +65,6 @@ import '@substrate-system/arrow-next/css'
 Or minified:
 ```js
 import '@substrate-system/arrow-next/css/min'
-```
-
-### Customize CSS via some variables
-
-```css
-arrow-next {
-    --example: pink;
-}
 ```
 
 ## use
