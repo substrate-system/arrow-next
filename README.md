@@ -37,7 +37,7 @@ npm i -S @substrate-system/arrow-next
 > [!IMPORTANT]  
 > This depends on a CSS class `visually-hidden`.
 > See [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/).
-> Install `@substrate-system/css-util` for help. 
+> Install `@substrate-system/css-util` for help with this. 
 
 This exposes ESM and common JS via [package.json `exports` field](https://nodejs.org/api/packages.html#exports).
 
@@ -52,6 +52,20 @@ require('@substrate-system/arrow-next')
 ```
 
 ## CSS
+
+### `@substrate-system/css-util/arrow`
+
+> [!TIP]
+> Use `@substrate-system/css-util/arrow` to deduplicate
+> the CSS with the `@substrate-system/arrow-prev` component.
+
+This will deduplicate CSS that is shared with [@substrate-system/arrow-next](https://github.com/substrate-system/arrow-next).
+
+```js
+import '@substrate-system/css-util/arrow'
+```
+
+### `.visually-hidden` class
 This depends on a CSS definition for `.visually-hidden`. Install `@substrate-system/css-util`:
 
 ```sh
