@@ -1,13 +1,3 @@
-.visually-hidden:not(:focus, :active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(100%); 
-    height: 1px; 
-    overflow: hidden; 
-    position: absolute; 
-    white-space: nowrap; 
-    width: 1px; 
-}
-
 arrow-next {
     margin: .3125rem;
     display: flex;
@@ -30,12 +20,16 @@ arrow-next {
     }
 
     &:hover {
-        /* outline: 2px solid red; */
         box-shadow: 0 0 16px 0 rgb(0 0 0 / 78%);
     }
 
     & button {
         background-color: transparent;
         border: none;
+        position: relative;
+        top: 2px;
+        left: 1px;
+        width: 100%;
+        height: 100%;
     }
 }

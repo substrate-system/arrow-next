@@ -23,34 +23,10 @@
     "start": "vite",
     "toc": "markdown-toc --maxdepth 3 -i README.md",
     "stylelint": "stylelint src/*.css",
-    "preversion": "npm run lint && stylelint src/*.css",
+    "preversion": "npm run lint && npm run stylelint",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
     "postversion": "git push --follow-tags && npm publish",
     "prepublishOnly": "npm run build"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@bicycle-codes/debug": "^0.6.13",
-    "@bicycle-codes/dom": "^0.0.23",
-    "@bicycle-codes/tapzero": "^0.10.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "auto-changelog": "^2.4.0",
-    "cssnano": "^7.0.3",
-    "esbuild": "^0.23.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "markdown-toc": "^1.2.0",
-    "postcss": "^8.4.38",
-    "postcss-cli": "^11.0.0",
-    "postcss-nesting": "^13.0.0",
-    "stylelint": "^16.7.0",
-    "stylelint-config-standard": "^36.0.1",
-    "tap-spec": "^5.0.0",
-    "tape-run": "^11.0.0",
-    "typedoc": "^0.26.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.3.4"
   },
   "exports": {
     ".": {
@@ -69,6 +45,31 @@
         "./dist/*"
       ]
     }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@bicycle-codes/debug": "^0.6.13",
+    "@bicycle-codes/dom": "^0.0.23",
+    "@bicycle-codes/tapzero": "^0.10.0",
+    "@substrate-system/css-util": "^0.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "auto-changelog": "^2.4.0",
+    "cssnano": "^7.0.3",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "markdown-toc": "^1.2.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-nesting": "^13.0.0",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1",
+    "tap-spec": "^5.0.0",
+    "tape-run": "^11.0.0",
+    "typedoc": "^0.26.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.4"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "MIT"
