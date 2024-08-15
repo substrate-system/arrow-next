@@ -40,8 +40,6 @@ npm i -S @substrate-system/arrow-next
 > See [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/).
 > Install `@substrate-system/css-util` for help. 
 
-import '@substrate-system/css-util/visually-hidden'
-
 This exposes ESM and common JS via [package.json `exports` field](https://nodejs.org/api/packages.html#exports).
 
 ### ESM
@@ -55,15 +53,22 @@ require('@substrate-system/arrow-next')
 ```
 
 ## CSS
+This depends on a CSS definition for `.visually-hidden`. Install `@substrate-system/css-util`:
+
+```sh
+npm i -S @substrate-system/css-util
+```
 
 ### Import CSS
 
 ```js
+import '@substrate-system/css-util/visually-hidden'
 import '@substrate-system/arrow-next/css'
 ```
 
 Or minified:
 ```js
+import '@substrate-system/css-util/min/visually-hidden'
 import '@substrate-system/arrow-next/css/min'
 ```
 
