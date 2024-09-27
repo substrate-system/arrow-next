@@ -55,7 +55,7 @@
   "devDependencies": {
     "@bicycle-codes/debug": "^0.6.13",
     "@bicycle-codes/dom": "^0.0.23",
-    "@bicycle-codes/tapzero": "^0.10.0",
+    "@bicycle-codes/tapzero": "^0.10.3",
     "@substrate-system/css-util": "^0.0.5",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
@@ -73,8 +73,8 @@
     "tap-spec": "^5.0.0",
     "tape-run": "^11.0.0",
     "typedoc": "^0.26.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.3.4"
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "MIT",
